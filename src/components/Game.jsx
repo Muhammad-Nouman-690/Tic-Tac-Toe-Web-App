@@ -34,11 +34,11 @@ const Game = () => {
     <>
       <Board squares={board} onClick={handleClick} />
       <div style={styles}>
-        <p>
+        <h3>
           {winner
             ? "winner: " + winner
             : "Next Player: " + (xIsNext ? "x" : "o")}
-        </p>
+        </h3>
         {renderMoves()}
       </div>
     </>
